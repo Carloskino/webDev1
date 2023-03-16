@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/contactStyle.css">
+</head>
+<body>
+    <div id="contactFormContainer">
+        <form action="mailto:abc@def.com">
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="fullName">
+            </div>
+            <div>
+                <label for="nationality">Nationality: </label>
+                <select name="nationality" id="nationality">
+                    <option value="0">-Select-</option>
+                    <option value="1">Maltese</option>
+                    <option value="2">Italian</option>
+                    <option value="3">French</option>
+                    <option value="4">English</option>
+                </select>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="">Remember Password</label>
+                <input type="checkbox" id="remember" name="remember">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Please Select Colour</legend>
+                    <div>
+                        <input type="radio" id="red" name="colour">
+                        <label for="red">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="green" name="colour">
+                        <label for="red">Green</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="blue" name="colour">
+                        <label for="red">Blue</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <button type="submit">Save</button>
+                <button type="reset">Reset</button>
+            </div>
+            <div id="contactFormErrors">
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
