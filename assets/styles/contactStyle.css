@@ -1,7 +1,6 @@
 body{
-    padding:10px;
-    border:1px solid black;
-    border-spacing: 0px;
+    padding: 50px;
+    background-color: #f8f7e2;
 }
 form{
     padding:1px;
@@ -11,7 +10,16 @@ div{
 }
 label{
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 fieldset{
-    background-color: #f3f3f3;
+    background-color: #e6e6e6;
+}
+legend{
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttonstyle{
+    text-align: center;
+    font-weight: 900;
 }
