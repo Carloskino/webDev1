@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="contactFormContainer">
-        <form action="mailto:abc@def.com">
+        <form action="mailto:abc@def.com" onsubmit="return validateForm();">
             <div>
                 <label for="fullName">Full Name: </label>
                 <input type="text" id="fullName" name="fullName">
@@ -23,6 +23,10 @@
                     <option value="3">French</option>
                     <option value="4">English</option>
                 </select>
+            </div>
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username">
             </div>
             <div>
                 <label for="password">Password: </label>
@@ -51,11 +55,14 @@
             </div>
             <div class="buttonstyle">
                 <button type="submit">Save</button>
-                <button type="reset">Reset</button>
-            </div>
-            <div id="contactFormErrors">
+                <button type="reset" onclick="resetForm();">Reset</button>
             </div>
         </form>
     </div>
+    <div id="contactFormErrors">
+        <ul id="errorList" class="errorText"></ul>
+    </div>
+
+    <script src="assets/scripts/validation.js"></script>
 </body>
 </html>

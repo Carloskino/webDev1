@@ -23,3 +23,17 @@ legend{
     text-align: center;
     font-weight: 900;
 }
+.errorText{
+    color:red;
+}
+.inputError{
+    color:red;
+    border:1px red solid;
+}
+.regularText{
+    color: black;
+}
+.resetError{
+    color: black;
+    border:1px black solid;
+}
